@@ -1,7 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
 
-FirstIntentionalFailure
-SecondIntentionalFailure
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -34,9 +32,8 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
-.WithName2("GetWeatherForecast");
+.WithName("GetWeatherForecast");
 
-ThirdIntentionalFailure
 
 app.Run();
 
