@@ -1,7 +1,5 @@
-var builder = WebApplication.CreateBuilder(args);
+var builderx = WebApplication.CreateBuilder(args);
 
-FirstIntentionalFailure
-SecondIntentionalFailure
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -20,7 +18,7 @@ app.UseHttpsRedirection();
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+}
 
 app.MapGet("/weatherforecast", () =>
 {
@@ -32,11 +30,9 @@ app.MapGet("/weatherforecast", () =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
-    return forecast;
+return forecast;
 })
 .WithName2("GetWeatherForecast");
-
-ThirdIntentionalFailure
 
 app.Run();
 
