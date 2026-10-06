@@ -32,7 +32,7 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
 return forecast;
 })
-.WithName2("GetWeatherForecast");
+.WithName("GetWeatherForecast");
 
 app.Run();
 
@@ -40,5 +40,3 @@ record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
-
-FourthIntentionalFailure
