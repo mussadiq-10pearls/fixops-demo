@@ -34,7 +34,9 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
-.WithName("GetWeatherForecast");
+.WithName2("GetWeatherForecast");
+
+ThirdIntentionalFailure
 
 app.Run();
 
